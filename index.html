@@ -8,28 +8,31 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+    <div class="loading"><span class="loader"></span></div>
+    <div id="error">
+        Location not found
+    </div>
     <div id="container">
         <form action="">
             <div class="form-control">
-                <label for="location">Enter location</label>
-                <input type="text" id="location">
+                <input type="text" id="location" placeholder="Search location">
             </div>
         </form>
 
-        <div>
-
-            <div class="toggle">
-                <span>*C</span>
-                <input class="tgl tgl-light" id="cb1" value="true" type="checkbox"/>
-                <label class="tgl-btn" for="cb1"></label>
-                <span>*F</span>
-            </div>
-            <div id="weather-info">
+        <div class="toggle">
+            <span>°C</span>
+            <input class="tgl tgl-light" id="cb1" value="true" type="checkbox"/>
+            <label class="tgl-btn" for="cb1"></label>
+            <span>°F</span>
+        </div>
+        <div id="weather-info">
+            <div>
                 <h2 class="temp"></h2>
-                <div>
-                    <h3 class="city"></h3>
-                    <p class="country"></p>
-                </div>
+                <p class="cond"></p>
+            </div>
+            <div>
+                <h3 class="city"></h3>
+                <p class="country"></p>
             </div>
         </div>
     </div>
